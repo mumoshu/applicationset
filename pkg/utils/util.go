@@ -47,7 +47,7 @@ func (r *Render) RenderTemplateParams(tmpl *argov1alpha1.Application, params map
 	if replacedTmpl.ObjectMeta.Finalizers == nil {
 		replacedTmpl.ObjectMeta.Finalizers = []string{}
 	}
-	replacedTmpl.ObjectMeta.Finalizers = append(replacedTmpl.ObjectMeta.Finalizers, "resources-finalizer.argocd.argoproj.io")
+	//replacedTmpl.ObjectMeta.Finalizers = append(replacedTmpl.ObjectMeta.Finalizers, "resources-finalizer.argocd.argoproj.io")
 
 	return &replacedTmpl, nil
 }
